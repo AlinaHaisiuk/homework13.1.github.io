@@ -1,0 +1,50 @@
+.container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: bisque;
+}
+svg {
+  background-color: blanchedalmond;
+  margin: 10px;
+}
+.container .square rect {
+  fill: pink;
+  stroke: gray;
+  stroke-width: 5px;
+  transition: fill 2s, stroke 2s;
+}
+.animated-rect {
+  animation: changeColors 4s infinite alternate;
+}
+@keyframes changeColors {
+  0% {
+    fill: rgb(89, 89, 232);
+    stroke: rgb(218, 137, 137);
+  }
+  50% {
+    fill: rgb(117, 204, 117);
+    stroke: rgb(229, 193, 126);
+  }
+  100% {
+    fill: rgb(81, 81, 208);
+    stroke: rgb(236, 168, 168);
+  }
+}
+.container .rectangle rect {
+  fill: burlywood;
+  stroke: orange;
+  stroke-width: 5px;
+}
+.container circle {
+  fill: darkkhaki;
+  stroke: saddlebrown;
+  stroke-width: 5px;
+}
+.container ellipse {
+  fill: thistle;
+  stroke: lightcoral;
+  stroke-width: 5px;
+}
